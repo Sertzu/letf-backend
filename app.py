@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Load CSV and preprocess
-df = pd.read_csv('etfs_with_fedfunds.csv', sep=';')
+df = pd.read_csv('data/data.csv', sep=';')
 df['Date'] = pd.to_datetime(df['Date'])  # Convert 'Date' column to datetime
 
 @app.route('/api/data', methods=['GET'])
