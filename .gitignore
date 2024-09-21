@@ -8,5 +8,5 @@ dist/
 htmlcov/
 .tox/
 docs/_build/
-etfs_with_fedfunds.csv
+data/
 out.json
